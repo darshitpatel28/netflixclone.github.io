@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background: #000;
+    color: white;
+
+}
+
+/* ************ HEADER CSS ************** */
+.header {
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(New\ Project\ 30\ [4EBF26A].png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.netflix-logo {
+    cursor: pointer;
+    width: 150px;
+
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn {
+    border: 0;
+    outline: 0;
+    background-color: #db000000;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(112, 112, 112);
+
+}
+
+.language-btn img {
+    margin-left: 10px;
+    width: 12px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.header-content h3 {
+    margin-top: 10px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+
+.email-signin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 5vh;
+    margin-top: 20px;
+
+}
+
+.input-email-signup {
+    background-color: transparent;
+    border: 1px solid rgb(122, 122, 122);
+    color: white;
+    width: 400px;
+    padding: 3px;
+    backdrop-filter: blur(10px);
+    height: 60px;
+}
+
+.submit-email {
+    background-color: #db0001;
+    border: transparent;
+    color: white;
+    margin-left: 5px;
+    padding: 5px;
+    height: 60px;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 2px 2px 30px black;
+}
+
+/* *************** FEATURES CSS *************** */
+
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col video,
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ***************** FAQ CSS ************* */
+.faq {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 12%;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+hr {
+    filter: opacity(50%);
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion li label:hover {
+    background-color: #606060;
+}
+
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    margin-top: 5px;
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .email-signin {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq p {
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background-color: #292929;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height:50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+  }
+
+  .linked-in{
+    font-size: 30px;
+    margin: 0 40px;
+  }
+  
+  .contact-details{
+    margin: 0 40px;
+  }
+
+  .linked-in i:hover,.contact-details:hover{
+    color: #db0001;
+  }
+
+@media only screen and(max-width:600px) {
+    .netflix-logo {
+        width: 100px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    nav .language-btn {
+        padding: 4px 8px;
+    }
+
+    .header-content {
+        position: unset;
+        transform: none;
+        padding: 150px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .email-signin button {
+        font-size: 12px;
+        padding: 10px 15px;
+
+    }
+
+    .text-col,
+    .img-col {
+        flex-basis: 100%;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 14px;
+      }
+    
+    
+}
